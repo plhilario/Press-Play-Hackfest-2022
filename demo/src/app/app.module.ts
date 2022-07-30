@@ -12,6 +12,7 @@ import { SchoolLoginComponent } from './login/school-login/school-login.componen
 import { InquiriesComponent } from './school-dashboard/inquiries/inquiries.component';
 import { AdminComponent } from './admin/admin.component';
 import { SchoolProfileComponent } from './school-profile/school-profile.component';
+import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SchoolProfileComponent } from './school-profile/school-profile.componen
     InquiriesComponent,
     AdminComponent,
     SchoolProfileComponent,
+    BookmarkComponent,
   ],
   imports: [
     BrowserModule,
