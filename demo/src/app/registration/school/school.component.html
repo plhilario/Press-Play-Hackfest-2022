@@ -19,66 +19,84 @@
           </div>
 
           <div class="d-flex justify-content-between align-items-center">
-            <!-- Checkboxes -->
-            <div class="form-check mb-0">
-              <!-- Email input -->
-              <!-- <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" required name="name">
-                  <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                    Name is required
-                  </div>
+            <div class="form-group form-check mb-0">
+              <div class="form-group">
+                <div class="form-floating mb-4">
+                  <input type="ID" id="ID " class="form-control form-control-lg" />
+                  <label class="form-label" for="email">School ID</label>
                 </div>
-                </form> -->
-                <div class="form-group">
-                  <div class="form-floating mb-4">
-                    <input type="ID" id="ID " class="form-control form-control-lg" />
-                    <label class="form-label" for="email">School ID</label>
-                  </div>
 
-                  <div class="form-floating mb-4">
-                    <input type="name" id="name" class="form-control form-control-lg" />
-                    <label class="form-label" for="email">School Name</label>
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <input type="password" id="password" class="form-control form-control-lg" />
-                    <label class="form-label" for="password">Password</label>
-                  </div>
-
-                  <div class="form-floating mb-4">
-                    <input type="email" id="email" class="form-control form-control-lg" />
-                    <label class="form-label" for="email">Email address</label>
-                  </div>
-                  <label for="generalCurricularOfferings">General Curricular Offerings</label>
-                  <select class="form-select" id="color" required name="generalCurricularOfferings"
-                    aria-label="Default select">
-                    <option>Elementary</option>
-                    <option>Secondary</option>
-                  </select>
-                  <label for="schoolGeneralClassification">School General Classification</label>
-                  <select class="form-select" id="color" required name="schoolGeneralClassification"
-                    aria-label="Default select">
-                    <option>Public</option>
-                    <option>Private</option>
-                  </select>
-                  <label for="curricularClassification">Curricular Classification</label>
-                  <select class="form-select" id="curricularClassification" required name="curricularClassification"
-                    aria-label="Default select">
-                    <option>Kinder</option>
-                    <option *ngFor="let curriculum of curricularClassification" [value]="curriculum">{{ curriculum }}
-                    </option>
-                  </select>
-                  <label for="curricularClassification">Region</label>
-                  <select class="form-select" id="regions" required name="regions" aria-label="Default select">
-                    <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
-                  </select>
-                  <button type="button" class="btn btn-lg" id="loginbtn">Register</button>
+                <div class="form-floating mb-4">
+                  <input type="name" id="name" class="form-control form-control-lg" />
+                  <label class="form-label" for="email">School Name</label>
                 </div>
+
+                <div class="form-floating mb-3">
+                  <input type="password" id="password" class="form-control form-control-lg" />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <input type="email" id="email" class="form-control form-control-lg" />
+                  <label class="form-label" for="email">Email address</label>
+                </div>
+                <label for="generalCurricularOfferings">General Curricular Offerings</label>
+                <select class="form-select" id="color" required name="generalCurricularOfferings"
+                  aria-label="Default select">
+                  <option>Elementary</option>
+                  <option>Secondary</option>
+                </select>
+                <label for="schoolGeneralClassification">School General Classification</label>
+                <select class="form-select" id="color" required name="schoolGeneralClassification"
+                  aria-label="Default select">
+                  <option>Public</option>
+                  <option>Private</option>
+                </select>
+                <label for="curricularClassification">Curricular Classification</label>
+                <select class="form-select" id="curricularClassification" required name="curricularClassification"
+                  aria-label="Default select">
+                  <option>Kinder</option>
+                  <option *ngFor="let curriculum of curricularClassification" [value]="curriculum">{{ curriculum }}
+                  </option>
+                </select>
+                <label for="curricularClassification">Region</label>
+                <select class="form-select" id="regions" required name="regions" aria-label="Default select">
+                  <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
+                </select>
+                <button type="button" class="btn btn-lg" id="loginbtn">Register</button>
+              </div>
             </div>
           </div>
         </form>
+        <div [hidden]="!submitted">
+          <h2>You submitted the following:</h2>
+          <div class="row">
+            <div class="col-xs-3">ID</div>
+            <div class="col-xs-9">{{ model.schoolID }}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">Name</div>
+            <div class="col-xs-9">{{ model.schoolName }}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">General Curricular Offerings</div>
+            <div class="col-xs-9">{{ model.generalCurricularOfferings }}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">School General Classification</div>
+            <div class="col-xs-9">{{ model.schoolGeneralClassification }}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">General Curricular Offerings</div>
+            <div class="col-xs-9">{{ model.generalCurricularOfferings }}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">Region</div>
+            <div class="col-xs-9">{{ model.region }}</div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
+        </div>
       </div>
     </div>
   </div>

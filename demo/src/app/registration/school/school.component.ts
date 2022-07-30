@@ -31,6 +31,13 @@ export class SchoolComponent implements OnInit {
   'Mandaluyong', 'Manila', 'Muntinlupa', 'Navotas', 'Valenzuela', 'Quezon City', 'Pasig',
   'San Juan', 'Pasay', 'Parañaque', 'Taguig'];
 
+  submitted = false;
+  model = new schoolRegistration(18, 'Dr IQ', 'a', 'Chuck Overstreet', '', '');
+
+  onSubmit() {
+    this.submitted = true;
+  }
+
   ngOnInit(): void {
   }
 
