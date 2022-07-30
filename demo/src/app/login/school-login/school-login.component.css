@@ -1,0 +1,31 @@
+section {
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    height: 360px; 
+    border-radius: 20px;
+}
+
+#loginbtn {
+    background-color: rgba(239,184,20,255);
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem;
+}
+
+.divider:after, .divider:before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: gray;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}

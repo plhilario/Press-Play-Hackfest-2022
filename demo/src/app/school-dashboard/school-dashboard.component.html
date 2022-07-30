@@ -1,0 +1,106 @@
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-white" id="sidebar-wrapper">
+    <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">Edu-Aksyon
+    </div>
+    <div class="list-group list-group-flush my-3">
+      <a href="/schoolDashboard" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+          class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+      <a href="/inquiries" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+          class="fas fa-project-diagram me-2"></i>Inquries</a>
+      <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+        class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+          class="fas fa-power-off me-2"></i>Logout</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div class="container-xl" id="page-content-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+      <div class="d-flex align-items-center">
+        <h2 class="fs-2 m-0">School Dashboard</h2>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user me-2"></i>User
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="/login">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center col">
+      <!-- Checkboxes -->
+      <div class="form-check mb-0">
+        <!-- Email input -->
+        <div class="form-group">
+          <div class="form-floating mb-4">
+            <input type="ID" id="ID " class="form-control form-control-lg" />
+            <label class="form-label" for="email">School ID</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="name" id="name" class="form-control form-control-lg" />
+            <label class="form-label" for="email">School Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" id="password" class="form-control form-control-lg" />
+            <label class="form-label" for="password">Password</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="email" id="email" class="form-control form-control-lg" />
+            <label class="form-label" for="email">Email address</label>
+          </div>
+          <label for="generalCurricularOfferings">General Curricular Offerings</label>
+          <select class="form-select" id="color" required name="generalCurricularOfferings" aria-label="Default select">
+            <option>Elementary</option>
+            <option>Secondary</option>
+          </select>
+          <label for="schoolGeneralClassification">School General Classification</label>
+          <select class="form-select" id="color" required name="schoolGeneralClassification"
+            aria-label="Default select">
+            <option>Public</option>
+            <option>Private</option>
+          </select>
+          <label for="curricularClassification">Curricular Classification</label>
+          <select class="form-select" id="curricularClassification" required name="curricularClassification"
+            aria-label="Default select">
+            <option>Kinder</option>
+            <option *ngFor="let curriculum of curricularClassification" [value]="curriculum">{{ curriculum }}</option>
+          </select>
+          <label for="curricularClassification">Region</label>
+          <select class="form-select" id="regions" required name="regions" aria-label="Default select">
+            <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center col">
+        <div class="form-floating">
+            <input type="ID" id="ID " class="form-control form-control-lg" />
+            <label class="form-label" for="email">Enrollment Fee</label>
+          </div>
+        <label for="enrollmentMethod">Enrollment Method</label>
+          <select class="form-select" id="methods" required name="methods" aria-label="Default select">
+            <option *ngFor="let method of enrollmentMethods" [value]="method">{{ method }}</option>
+          </select>
+      </div>
+    </div>
+  </div>
+</div>

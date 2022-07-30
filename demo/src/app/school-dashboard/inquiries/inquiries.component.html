@@ -1,0 +1,206 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">Edu-Aksyon
+        </div>
+        <div class="list-group list-group-flush my-3">
+            <a href="/schoolDashboard" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                    class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-project-diagram me-2"></i>Inquries</a>
+            <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                    class="fas fa-power-off me-2"></i>Logout</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+            <div class="d-flex align-items-center">
+                <h2 class="fs-2 m-0">Inquiries</h2>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-2"></i>User
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="/login">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Parent/Guardian Contact Number</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
+                                style="width: 45px; height: 45px" class="rounded-circle" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">Paris L. Hilario</p>
+                                <p class="text-muted mb-0">plhilario@donbosco.edu.ph</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">09159525587</p>
+                    </td>
+                    <td>
+                        Taguig
+                    </td>
+                    <td>Pending</td>
+                    <td>
+                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" mdbRipple
+                            rippleColor="dark">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                                style="width: 45px; height: 45px" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">Miguel James P. Obispo</p>
+                                <p class="text-muted mb-0">mpobispo@donbosco.edu.ph</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">09176528374</p>
+                    </td>
+                    <td>
+                        Pasig
+                    </td>
+                    <td>Partial Payment</td>
+                    <td>
+                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" mdbRipple
+                            rippleColor="dark">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+                                style="width: 45px; height: 45px" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">Jay Gabriel Victor U. Javines</p>
+                                <p class="text-muted mb-0">jujavines@donbosco.edu.ph</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">09183290182</p>
+                    </td>
+                    <td>
+                        Mandaluyong
+                    </td>
+                    <td>Question</td>
+                    <td>
+                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" mdbRipple
+                            rippleColor="dark">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="d-flex align-items-center">
+                <h2 class="fs-2 m-0">Pending Payments</h2>
+            </div>
+
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Parent/Guardian Contact Number</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
+                                style="width: 45px; height: 45px" class="rounded-circle" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">Euan Jared J. Refuerzo</p>
+                                <p class="text-muted mb-0">ejrefuerzo@donbosco.edu.ph</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">09159507681</p>
+                    </td>
+                    <td>
+                        Taguig
+                    </td>
+                    <td>Pending</td>
+                    <td>
+                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" mdbRipple
+                            rippleColor="dark">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                                style="width: 45px; height: 45px" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">Gabriel Alexis F. Gonzales</p>
+                                <p class="text-muted mb-0">gfgonzales@donbosco.edu.ph</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">09176789379</p>
+                    </td>
+                    <td>
+                        Pasig
+                    </td>
+                    <td>Fully Paid</td>
+                    <td>
+                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" mdbRipple
+                            rippleColor="dark">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
