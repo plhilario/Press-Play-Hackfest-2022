@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { InquiriesComponent } from './school-dashboard/inquiries/inquiries.compo
 import { AdminComponent } from './admin/admin.component';
 import { SchoolProfileComponent } from './school-profile/school-profile.component';
 import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.component';
+import { VerificationComponent } from './verification/verification.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +29,12 @@ import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.compone
     AdminComponent,
     SchoolProfileComponent,
     BookmarkComponent,
+    VerificationComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
