@@ -6,6 +6,22 @@
     <title>Demo Homepage</title>
 </head>
 <body>
-  <app-login></app-login>
+  <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5"
+    id="header">
+    <div class="text-white mb-3 mb-md-0">
+      <i class="fa-solid fa-code"></i>
+      Bosco Devs
+    </div>
+    <div>
+      <a href="#" class="text-white me-4" id="about-us">
+        <i class="fa-solid fa-address-card"></i>
+        About us
+      </a>
+      <a href="#!" class="text-white me-4"></a>
+      <a href="#!" class="text-white me-4"></a>
+      <a href="#!" class="text-white"></a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
 </body>
 </html>
