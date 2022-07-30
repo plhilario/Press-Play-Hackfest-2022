@@ -11,6 +11,7 @@ import { SchoolDashboardComponent } from './school-dashboard/school-dashboard.co
 import { SchoolLoginComponent } from './login/school-login/school-login.component';
 import { InquiriesComponent } from './school-dashboard/inquiries/inquiries.component';
 import { AdminComponent } from './admin/admin.component';
+import { SchoolProfileComponent } from './school-profile/school-profile.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AdminComponent } from './admin/admin.component';
     SchoolLoginComponent,
     InquiriesComponent,
     AdminComponent,
+    SchoolProfileComponent,
   ],
   imports: [
     BrowserModule,
