@@ -1,9 +1,16 @@
 #header {
-    background-color: rgba(239,184,20,255);
+    background-color: white;
     font-size: 30px;
 }
 
-#about-us {
+a {
     text-decoration: none !important;
     font-size: 30px;
+    color: #f7931e;
+}
+
+#about-us {
+    display: flex; 
+    align-items: center;
+    margin: 0px;
 }
