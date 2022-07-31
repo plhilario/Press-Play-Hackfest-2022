@@ -11,6 +11,7 @@ import { InquiriesComponent } from './school-dashboard/inquiries/inquiries.compo
 import { SchoolProfileComponent } from './school-profile/school-profile.component';
 import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.component';
 import { AdminComponent } from './admin/admin.component';
+import { EnrollmentPageComponent } from './enrollment-page/enrollment-page.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'inquiries',  title: 'Edu-Aksyon | Inquiries ', component: InquiriesComponent},
   {path: 'schoolProfile',  title: 'Edu-Aksyon | School Profile', component: SchoolProfileComponent},
   {path: 'bookmarks',  title: 'Edu-Aksyon | Bookmarks', component: BookmarkComponent},
-  {path: 'admin',  title: 'Edu-Aksyon | Admin', component: AdminComponent}
+  {path: 'admin',  title: 'Edu-Aksyon | Admin', component: AdminComponent},
+  {path: 'enrollmentPage',  title: 'Edu-Aksyon | Admin', component: EnrollmentPageComponent}
 ];
 
 @NgModule({
