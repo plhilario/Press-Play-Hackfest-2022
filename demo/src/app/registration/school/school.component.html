@@ -64,6 +64,12 @@
                 <select class="form-select" id="regions" required name="regions" aria-label="Default select">
                   <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
                 </select>
+                <div class="form-check m-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    We have read and we agree to <a href = "#!" class = "text-primary">terms and conditions</a> and the <a href = "#!" class = "text-primary">privacy policy</a> of Edu-Aksyon.
+                  </label>
+                </div>
                 <button type="button" class="btn btn-lg m-3" id="loginbtn">Register</button>
               </div>
             </div>
