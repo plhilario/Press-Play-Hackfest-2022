@@ -16,6 +16,7 @@ a {
     background-color: rgba(239,184,20,255);
     padding-left: 2.5rem; 
     padding-right: 2.5rem;
+    margin: 20px;
 }
 
 .ng-valid[required], .ng-valid.required  {
