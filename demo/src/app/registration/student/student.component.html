@@ -9,7 +9,9 @@
             <div class="fw-normal mb-0 me-3"></div>
             <div class="col mt-3">
               <h1 class="mx-1 my-3"><strong>Register!</strong></h1>
-              <p class="mx-1" style="text-align: justify;">Input your student information so that we can immediately set-up a profile for you with recommended schools depending on your area that offer courses of your liking.</p>
+              <p class="mx-1" style="text-align: justify;">Input your student information so that we can immediately
+                set-up a profile for you with recommended schools depending on your area that offer courses of your
+                liking.</p>
             </div>
           </div>
 
@@ -18,9 +20,9 @@
           </div>
 
           <div class="d-flex justify-content-center align-items-center p-2">
-          <h4>Student Information</h4>
+            <h4>Student Information</h4>
           </div>
-          
+
           <div class="d-flex justify-content-center align-items-center">
             <!-- Checkboxes -->
             <div class="form-check mb-0">
@@ -46,12 +48,11 @@
                   <label class="form-label" for="email">Email address</label>
                 </div>
                 <label for="curricularClassification">Region</label>
-                <select class="form-select" id="regions" required name="regions"
-                  aria-label="Default select">
+                <select class="form-select" id="regions" required name="regions" aria-label="Default select">
                   <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
                 </select>
                 <button type="button" class="btn btn-lg" id="loginbtn"><a href="/studentDashboard">Register</a></button>
-			  </div>
+              </div>
             </div>
           </div>
         </form>
