@@ -67,36 +67,7 @@
             </div>
           </div>
         </form>
-        <div [hidden]="!submitted">
-          <h2>You submitted the following:</h2>
-          <div class="row">
-            <div class="col-xs-3">ID</div>
-            <div class="col-xs-9">{{ model.schoolID }}</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">Name</div>
-            <div class="col-xs-9">{{ model.schoolName }}</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">General Curricular Offerings</div>
-            <div class="col-xs-9">{{ model.generalCurricularOfferings }}</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">School General Classification</div>
-            <div class="col-xs-9">{{ model.schoolGeneralClassification }}</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">General Curricular Offerings</div>
-            <div class="col-xs-9">{{ model.generalCurricularOfferings }}</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">Region</div>
-            <div class="col-xs-9">{{ model.region }}</div>
-          </div>
-          <br>
-          <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
         </div>
-      </div>
     </div>
   </div>
 </section>

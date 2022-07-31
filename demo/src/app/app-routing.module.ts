@@ -12,9 +12,12 @@ import { SchoolProfileComponent } from './school-profile/school-profile.componen
 import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.component';
 import { AdminComponent } from './admin/admin.component';
 import { EnrollmentPageComponent } from './enrollment-page/enrollment-page.component';
+import { GetStartedComponent } from './get-started/get-started.component';
+import { VerificationComponent } from './verification/verification.component';
 
 
 const routes: Routes = [
+  {path: 'getStarted',  title: 'Edu-Aksyon | Get Started', component: GetStartedComponent},
   {path: 'login',  title: 'Edu-Aksyon | Login', component: LoginComponent},
   {path: 'registration',  title: 'Edu-Aksyon | Registration', component: RegistrationComponent},
   {path: 'schoolRegistration',  title: 'Edu-Aksyon | School Registration', component: SchoolComponent},
@@ -26,7 +29,8 @@ const routes: Routes = [
   {path: 'schoolProfile',  title: 'Edu-Aksyon | School Profile', component: SchoolProfileComponent},
   {path: 'bookmarks',  title: 'Edu-Aksyon | Bookmarks', component: BookmarkComponent},
   {path: 'admin',  title: 'Edu-Aksyon | Admin', component: AdminComponent},
-  {path: 'enrollmentPage',  title: 'Edu-Aksyon | Admin', component: EnrollmentPageComponent}
+  {path: 'enrollmentPage',  title: 'Edu-Aksyon | Admin', component: EnrollmentPageComponent},
+  {path: 'verification',  title: 'Edu-Aksyon | Verification', component: VerificationComponent}
 ];
 
 @NgModule({

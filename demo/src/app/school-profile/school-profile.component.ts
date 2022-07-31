@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BookmarkService } from '../bookmark.service';
-import { schoolRegistration } from '../schoolRegistration';
 
 @Component({
   selector: 'app-school-profile',
@@ -9,13 +7,7 @@ import { schoolRegistration } from '../schoolRegistration';
 })
 export class SchoolProfileComponent implements OnInit {
 
-  schoolRegistration: schoolRegistration | undefined;
-
-  bookmarkSchool(schoolRegistration: schoolRegistration) {
-    this.bookmarkService.bookmarkSchool(schoolRegistration);
-  }
-
-  constructor(private bookmarkService: BookmarkService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

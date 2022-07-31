@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { schoolRegistration } from '../../schoolRegistration';
 
 @Component({
   selector: 'app-school',
@@ -32,7 +31,6 @@ export class SchoolComponent implements OnInit {
   'San Juan', 'Pasay', 'Parañaque', 'Taguig'];
 
   submitted = false;
-  model = new schoolRegistration(18, 'Dr IQ', 'a', 'Chuck Overstreet', '', '');
 
   onSubmit() {
     this.submitted = true;
