@@ -15,7 +15,7 @@ import { AdminComponent } from './admin/admin.component';
 import { SchoolProfileComponent } from './school-profile/school-profile.component';
 import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.component';
 import { EnrollmentPageComponent } from './enrollment-page/enrollment-page.component';
-import { VerificationComponent } from './verification/verification.component';
+import { VerificationComponent } from './school-dashboard/verification/verification.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 
 @NgModule({
