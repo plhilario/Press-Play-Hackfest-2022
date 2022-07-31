@@ -1,16 +1,19 @@
 #header {
-    background-color: white;
+    background-color: rgba(239,184,20,255);
     font-size: 30px;
 }
 
 a {
     text-decoration: none !important;
-    font-size: 30px;
-    color: #f7931e;
+    font-size: 25px;
+    color: white;
 }
 
 #about-us {
     display: flex; 
     align-items: center;
-    margin: 0px;
+}
+
+img {
+    padding: 20px;
 }
