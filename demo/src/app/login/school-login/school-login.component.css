@@ -7,6 +7,11 @@ img {
     border-radius: 20px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 #loginbtn {
     background-color: rgba(239,184,20,255);
     padding-left: 2.5rem; 
