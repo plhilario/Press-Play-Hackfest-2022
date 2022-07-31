@@ -16,6 +16,7 @@ import { SchoolProfileComponent } from './school-profile/school-profile.componen
 import { BookmarkComponent } from './student-dashboard/bookmark/bookmark.component';
 import { EnrollmentPageComponent } from './enrollment-page/enrollment-page.component';
 import { VerificationComponent } from './verification/verification.component';
+import { GetStartedComponent } from './get-started/get-started.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { VerificationComponent } from './verification/verification.component';
     SchoolProfileComponent,
     BookmarkComponent,
     VerificationComponent,
-    EnrollmentPageComponent
+    EnrollmentPageComponent,
+    GetStartedComponent
   ],
   imports: [
     BrowserModule,
