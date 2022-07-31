@@ -11,6 +11,8 @@ export class StudentComponent implements OnInit {
   'Mandaluyong', 'Manila', 'Muntinlupa', 'Navotas', 'Valenzuela', 'Quezon City', 'Pasig',
   'San Juan', 'Pasay', 'Parañaque', 'Taguig'];
 
+  relation = ['Father', 'Mother', 'Guardian'];
+
   constructor() { }
 
   ngOnInit(): void {
